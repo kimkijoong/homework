@@ -1,0 +1,370 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Varela+Round';
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+@import 'https://fonts.googleapis.com/css?family=PT+Serif';
+
+
+/* 스타일 초기화 */
+html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,fieldset{
+	margin: 0;
+	padding: 0;
+}
+/* 본문 스타일 */
+html{
+  font-size: 0.625em;
+	font-family: 'Varela Round', sans-serif;
+}
+body{
+  background: #282828;
+  font-size: 1.4rem;
+  line-height: 1.2;
+	color: #868686;
+}
+.wrapper{
+	margin: 0 auto;
+	padding-top: 80px;
+	width: 960px;
+	background-color: #fff;
+}
+
+/* header */
+.header{
+	padding-left: 120px;
+	padding-right: 120px;
+}
+.info{
+	position: relative;
+	margin-bottom: 20px;
+}
+.info-theme{
+	float: left;
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	color: #1f4ba5;
+}
+.info-date{
+	float: left;
+	display: inline-block;
+	font-family: 'PT Serif', serif;
+	font-style: italic;
+	color: #b8b8b8;
+	padding-left: 30px;
+}
+.info-writer{
+	float: right;
+	display: inline-block;
+
+}
+.by{
+	font-family: 'PT Serif', serif;
+	font-style: italic;
+}
+.writer{
+	font-family: 'Oswald', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+.info::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+h1{
+	width: 480px;
+	font-size: 4.8rem;
+	margin-bottom: 30px;
+	color: #222222;
+}
+.headline-01-desc{
+	position: relative;;
+	width: 600px;
+	font-size: 20px;
+	line-height: 36px;
+	font-family: 'PT serif', serif;
+	font-style: italic;
+	margin-bottom: 40px;
+}
+.bookmark{
+	position: absolute;
+  top: 0px;
+  left: -30px;
+	}
+
+
+
+/* Ocean view */
+img[src*="wave.jpg"]{
+	width: 960px;
+}
+.Ocean-view > p{
+	margin-top: 25px;
+	margin-bottom: 45px;
+	padding-left: 120px;
+}
+.about-ocean{
+	padding-left: 120px;
+	width: 600px;
+	margin-bottom: 45px;
+}
+.Ocean-view p{
+	font-family: 'PT serif', serif;
+	font-size: 1.2rem;
+	color: #b8b8b8;
+}
+.about-ocean{
+	line-height: 30px;
+	font-size: 1.6rem;
+}
+/* Carousel */
+.Carousel-content{
+	margin-bottom: 40px;
+}
+
+.Carousel-content > div{
+	float: left;
+	width : 240px;
+}
+.Carousel-content span{
+	display: block;
+	text-align: center;
+	margin-top: 12px;
+	font-family: 'PT serif',serif;
+	font-style: italic;
+	color: #b8b8b8;
+	line-height: 18px;
+}
+
+.Carousel-content::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.controller{
+	position: relative;
+	padding-left: 120px;
+}
+.page-number{
+	position: absolute;
+	padding-left: 240px;
+	left: 30px;
+	top: 23px;
+	color:
+}
+.current-pages{
+	display: block;
+	font-size: 1.4rem;
+}
+.total-pages{
+	font-size: 0.7rem;
+	display: block;
+	margin-top: -1.6rem;
+	margin-left: 1rem;
+}
+.controller button{
+	width: 60px;
+	height: 60px;
+	border: 1px solid #b8b8b8;
+	padding: 0;
+	background-color: #fff;
+	float: left;
+}
+.Carousel::after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.controller > img[src*="prev"]{
+	margin: auto;
+}
+
+
+/*메인컨텐츠2*/
+.main-content-02{
+	padding-left: 120px;
+	padding-right: 240px;
+}
+.main-headline-02{
+	margin: 50px 0;
+	color: #222222;
+	font-size: 3rem;
+	font-weight: normal;
+}
+.headline-02-desc{
+	line-height: 30px;
+}
+.Quote{
+	position: relative;
+}
+.Quote q{
+	display: inline-block;
+	width: 380px;
+	font-size: 1.8rem;
+	font-family: 'PT serif', serif;
+	font-style: italic;
+	color: #222222;
+	line-height: 30px;
+	margin-top: 40px;
+	position: relative;
+}
+.Quote q::before{
+	font-size: 35px;
+	position: absolute;;
+	top: 10px;
+	left: -30px;
+	color: #1f4ba5;
+	font-style: normal;
+}
+.Quote q::after{
+	content: "";
+}
+.q-photo{
+	position: absolute;
+	top:50px;
+	left: 400px;
+}
+.q-photo-desc{
+	position: absolute;
+	top:130px;
+	left:400px;
+}
+.q-photo-desc p:nth-child(1){
+	color: #222222;
+	line-height: 16px;
+	font-size: 1.6rem;
+}
+.q-photo-desc p:nth-child(2){
+	margin-top: 5px;
+	color: #b8b8b8;
+	line-height: 18px;
+	font-family: 'PT serif',serif;
+	font-size: 1.2rem;
+	font-style: italic;
+}
+.main-content02-column{
+	margin: 40px 0;
+	line-height: 30px;
+}
+
+/*메인컨텐츠3*/
+.main-content-03{
+	margin-bottom: 85px;
+}
+.wolf{
+	padding-left: 120px;
+}
+.wolf div > p{
+	display: block;
+	text-align: center;
+	width: 600px;
+	margin-top: 12px;
+	font-family: 'PT serif',serif;
+	font-style: italic;
+	color: #b8b8b8;
+
+}
+.MC3-column{
+	margin-top: 50px;
+	padding-left: 120px;
+	width: 600px;
+}
+.MC3-column01{
+	width: 265px;
+	float: left;
+}
+.MC3-column02{
+	width: 265px;
+	float: left;
+	padding-left: 50px;
+}
+.MC3-column::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.column-title01, .column-title02{
+	font-size: 1.8rem;
+	color: #222222;
+	margin-bottom: 25px;
+}
+.column-p-01, .column-p-02{
+	line-height: 30px;
+}
+
+/*바텀*/
+.share-list{
+	padding-left: 120px;
+	font-size: 10px;
+	list-style: none;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+}
+.share-list button{
+	color: #fff;
+}
+.share-list a:visited, .share-list a:hover,
+.share-list a:focus, .share-list a:link{
+
+}
+.share-list > li{
+	float: left;
+
+}
+.share-list::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.back-pages{
+	padding-left: 120px;
+}
+.share-list > li > button{
+  display: block;
+	width: 85px;
+	height: 30px;
+	border: 0;
+	padding: 0;
+	border-radius: 15px;
+	margin-right: 10px;
+}
+.facebook > button{
+	background: #215b9a;
+}
+.twitter > button{
+	background: #00adf2;
+}
+.google-plus > button{
+	background: #ce4435;
+}
+.pinterest > button{
+	background: #e51616;
+}
+
+.share-list button{
+	line-height: 30px;
+}
+
+.facebook img[alt*="facebook share icon"],
+.twitter img[alt*="twitter share icon"],
+.google-plus img[alt*="google plus share icon"],
+.pinterest img[alt*="pinterest share icon"]
+{
+	float: left;
+	margin-left: 13px;
+	margin-top: 7px
+}
+
+.back-pages{
+	margin-top: 40px;
+	padding-bottom: 105px;
+}
+.back-pages-link {
+	display: inline-block;
+}
+.back-pages-link a{
+	text-decoration: none;
+	padding: 11px;
+}

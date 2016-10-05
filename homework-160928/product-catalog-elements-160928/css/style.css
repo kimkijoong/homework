@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* 초기화 */
+html, body{margin: 0; padding: 0; font-size: 0.625em; background: #333; }
+ul{margin: 0; padding:0;}
+li{list-style: none;}
+button{
+  margin: 0;
+  padding: 0;
+}
+/* 레이아웃 */
+.wrapper{
+ margin: 50px auto;
+ padding: 0;
+ width: 720px;
+ height: auto;
+ background: #666;
+}
+.shopping-list-01 *{ box-sizing: border-box;}
+.shopping-list-02 *{ box-sizing: border-box;}
+.shopping-list-03 *{ box-sizing: border-box;}
+.shopping-list-04 *{ box-sizing: border-box;}
+
+.item-wh{
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  float: left;
+}
+.info-wh{
+  width: 240px;
+  height: 120px;
+  background: #fff;
+  padding: 29px;
+  float: left;
+}
+.price-wh{
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  float: left;
+  padding: 30px 20px;
+}
+.price-wh p{
+  margin: 0;
+}
+.price-wh img{
+  float: left;
+  margin-top: 22px;
+}
+p[class="price-before-sale"]{
+  float: left;
+  margin-top: 22px;
+  padding-left: 10px;
+}
+.cart-wh{
+  width: 240px;
+  height: 120px;
+  background: #fff;
+  float: left;
+  padding: 30px 30px 30px 0;
+}
+.cart-wh p{
+  margin: 0;
+}
+.shopping-list-01:after,.shopping-list-01::after,
+.shopping-list-02:after,.shopping-list-02::after,
+.shopping-list-03:after,.shopping-list-03::after,
+.shopping-list-03:after,.shopping-list-04::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper >ul >li{
+  border-bottom: 1px solid #ececec;
+}
+.info-text-font-01{
+  font-size: 1.2rem;
+  font-style: normal;
+  font-family: 'Varela Round', sans-serif;
+  line-height: 16px;
+  color: #222222;
+  margin: 0;
+}
+.info-text-font-02{
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: 'PT Serif', serif;
+  line-height: 18px;
+  color: #b8b8b8;
+  margin-top: 15px;
+}
+.price-text-static{
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1em;
+  color: #222222;
+}
+.price-text-sale{
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1em;
+  color: #ff3f2b;
+}
+.price-before-sale{
+  color: #a1a1a1;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1em;
+  text-decoration: line-through;
+}
+.size-font{
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: 'PT Serif', serif;
+  color: #868686;
+}
+.size-US-font{
+  font-size: 1.2rem;
+  font-family: 'Varela Round', sans-serif;
+  color: #222222;
+  line-height: 16px;
+  float: left;
+}
+.size-design{
+  width: 90px;
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+  background: #f6f6f6;
+  float: left;
+}
+.cart-bth-design{
+  font-size: 1.2rem;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  background: #1f4ba5;
+  width: 110px;
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+  float: right;
+}
+.wishlist-on, .wishlist-off{
+  margin: 14px 0 0 0;
+}
+
+.wishlist-off p{
+  background: url('../images/icon-empty-heart-plus.png') no-repeat left;
+  padding: 0 0 0 22px;
+}
+.wishlist-on p{
+  background: url('../images/icon-fill-heart.png') no-repeat left;
+  padding: 0 0 0 22px;
+}
+.wishlist-off{
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: 'PT serif',serif;
+  line-height: 18px;
+  border: 0;
+  background-color: transparent;
+  color: #b8b8b8;
+}
+
+.wishlist-on{
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: 'PT serif',serif;
+  line-height: 18px;
+  border: 0;
+  background-color: transparent;
+  color: #b8b8b8;
+  padding: 0;
+}
+/*.info-blazer .info-text-font-02{
+  margin-top: 15px;
+}*/

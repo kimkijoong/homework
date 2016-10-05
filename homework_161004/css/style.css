@@ -1,0 +1,25 @@
+
+body{
+    margin:0;
+}
+.wrapper {
+    overflow: scroll;
+    background-color: #ffffff;
+    width: auto;
+    height: 100vh;
+    padding: 50px 45% 150px 10%;
+    background-image: url(../daftpunk.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50% ;
+    background-attachment: fixed;
+    
+}
+h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+}
+p{
+    font-family: 'Work Sans', sans-serif;
+
+}

@@ -1,0 +1,107 @@
+body{
+  font: 200 14px/1.5 "Spoqa Han Sans", sans-serif;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: 400;
+  color: #2dbccb;
+}
+abbr { cursor: help; }
+
+.reset-list{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.reset-list a{
+  text-decoration: none;
+}
+a:link{color: #0d2e23; }
+a:visited{color: #0d2e23; }
+a:hover{color: #1aa375;}
+a:active{background: #3bf8f3; }
+a:focus{background: #3bf8f3; outline: none; }
+/*---------------------------*/
+.demo-attr-list{
+  width: 800px;
+  margin: 30px auto;
+  border-top: 1px solid #2bffd4;
+  border-bottom: 1px solid #2bffd4;
+  padding: 30px 0;
+  /*background: lime;*/
+}
+.wrapper{
+  width: 800px;
+  height: auto;
+  margin: 0 auto;
+}
+.attr-image{
+  width: 800px;
+  height: auto;
+  padding-bottom: 30px;
+}
+.demo-attr-list * {
+  margin: 0;
+}
+
+.demo-attr-list h1 {
+  margin-bottom: 10px;
+}
+
+/* 외부링크 */
+.external-list a[href^="http://"][target^="_blank"],
+.external-list a[href^="https://"][target^="_blank"] {
+  padding-right: 1em;
+  background: url("../images/icons/external-link/External Link.svg") no-repeat right;
+  background-size: 13px 13px;
+}
+.external-list a[target="_blank"]:focus {
+  background-color: #3bf8f3;
+}
+/* 파일 유형 감지 목록 */
+.file-list a[href$=".psd"]{background: url("../images/icons/file-type-collection/svg/psd.svg") no-repeat}
+.file-list a[href$=".ai"]{background: url("../images/icons/file-type-collection/svg/ai.svg") no-repeat}
+.file-list a[href$=".pdf"]{background: url("../images/icons/file-type-collection/svg/pdf.svg") no-repeat}
+.file-list a[href$=".id"]{background: url("../images/icons/file-type-collection/svg/indesign.svg") no-repeat}
+.file-list a[href$=".mp3"]{background: url("../images/icons/file-type-collection/svg/mp3.svg") no-repeat}
+.file-list a[href$=".mp4"]{background: url("../images/icons/file-type-collection/svg/mp4.svg") no-repeat}
+.file-list a[href$=".html"]{background: url("..//images/icons/file-type-collection/svg/html.svg") no-repeat}
+.file-list a[href$=".css"]{background: url("../images/icons/file-type-collection/svg/css.svg") no-repeat}
+.file-list a[href$=".js"]{background: url("../images/icons/file-type-collection/svg/javascript.svg") no-repeat}
+.file-list a[href$=".json"]{background: url("../images/icons/file-type-collection/svg/json-file.svg") no-repeat}
+
+.file-list a{padding-left: 20px;}
+.file-list a:focus {
+  background-color: #3bf8f3;
+}
+/* 소셜 네트워크 */
+.sns-list a[href*="behance"]{background-image: url("../images/icons/SNS/Behance.png")}
+.sns-list a[href*="blogger"]{background-image: url("../images/icons/SNS/Blogger.png")}
+.sns-list a[href*="deviantArt"]{background-image: url("../images/icons/SNS/DeviantArt.png")}
+.sns-list a[href*="dropbox"]{background-image: url("../images/icons/SNS/Dropbox.png")}
+.sns-list a[href*="evernote"]{background-image: url("../images/icons/SNS/Evernote.png")}
+
+.sns-list li {
+  float: left;
+  margin-right: 20px;
+}
+
+.sns-list:after,
+.sns-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.sns-list a {
+  overflow: hidden;
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999em;
+}
+.sns-list a:focus{
+  outline: 3px solid #3bf8f3;
+}
