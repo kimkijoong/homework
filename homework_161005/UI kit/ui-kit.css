@@ -13,7 +13,7 @@ body {
  * --------------------------------
  * 가이드
  * ----------------------------- */
-.guide {
+.guide, body:hover {
   background: url("leading-21.png");
   min-height: 100vh;
 }
