@@ -93,9 +93,9 @@
 
 #### 테이블 작성 순서
 
-1. <thead></thead>
-2. <tfoot></tfoot>
-3. <tbody></tbody>
+1. `<thead></thead>`
+2. `<tfoot></tfoot>`
+3. `<tbody></tbody>`
 
 - ※ 이렇게 작성해도 브라우저상 <tfoot></tfoot>가 가장 아래에 시각적으로 배치가 된다.
 
