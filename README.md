@@ -139,3 +139,91 @@
 
 - ※ `$1` : 커서가 오게 하는 방법은 '달러'+'숫자'
 - ※ `${1:ko-KR}` : ko-KR의 영역을 블록 처리한다. 방법은 달러{숫자: 내용}
+
+
+### 순차 목록 비순차 목록 색상 변경
+
+#### 비순차 목록
+```html
+<ul class="ul-color">
+  <li>d1 list
+    <ul>
+      <li>d2 list
+        <ul>
+          <li>d2 list</li>
+          <li>d2 list</li>
+          <li>d2 list</li>
+        </ul>
+      </li>
+      <li>d2 list</li>
+      <li>d2 list</li>
+    </ul>
+  </li>
+  <li>d1 list</li>
+  <li>d1 list</li>
+</ul>
+```
+
+```css
+.ul-color,
+.ul-color ul,
+.ul-color ol {
+  list-style: none;
+  font-family: Verdana;
+}
+/*
+  •  "\2022"
+  ◦  "\25E6"
+  ▪  "\25AA"
+*/
+.ul-color li:before {
+  display: inline-block;
+  width: 0.7em;
+  margin-left: -0.7em;
+  color: #69d59c;
+}
+.ul-color li:before {
+  content: "\2022";
+}
+.ul-color li li:before {
+  content: "\25E6";
+}
+.ul-color li li li:before {
+  content: "\25AA";
+}
+```
+
+- ※ 비순차 목록은 가상요소를 사용하여였다.
+
+#### 순차 목록
+```html
+<ol class="ol-color">
+  <li><div class="ol-color-content">d1 list</div>
+    <ol>
+      <li><div class="ol-color-content">d2 list</div>
+        <ol>
+          <li><div class="ol-color-content">d2 list</div></li>
+          <li><div class="ol-color-content">d2 list</div></li>
+          <li><div class="ol-color-content">d2 list</div></li>
+        </ol>
+      </li>
+      <li><div class="ol-color-content">d2 list</div></li>
+      <li><div class="ol-color-content">d2 list</div></li>
+    </ol>
+  </li>
+  <li><div class="ol-color-content">d1 list</div></li>
+  <li><div class="ol-color-content">d1 list</div></li>
+</ol>
+```
+
+```css
+
+.ol-color {
+  color: #69d59c;
+}
+.ol-color .ol-color-content {
+  color: black;
+}
+```
+
+- ※ 순차 목록은 클래스요소를 사용하여, 각 컨텐츠를 감싸 색상을 지정했다.
