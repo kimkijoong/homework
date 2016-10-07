@@ -1,0 +1,231 @@
+/*기본값*/
+body{
+    margin: 0;
+    background-color: #333;
+}
+button,li,ul,a{
+    margin: 0;
+    padding: 0;
+}
+.Wrapper{
+    margin: 0 auto;
+    width: 960px;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+}
+.Shopping-pages{
+    display: flex;
+    flex-direction: column;
+}
+.Info-pages{
+    display: flex;
+    flex-direction: row;
+    
+}
+.Bottom-pages{
+    display: flex;
+    flex-direction: column;
+}
+
+.Header{
+    width: 960px;
+    height: 80px;
+    background-color: white;
+     
+}
+.Slider{
+    width: 960px;
+    height: 480px;
+    background-color: burlywood;
+}
+.Banners{
+    width: 960px;
+    height: 240px;
+    background-color: crimson;
+}
+.Featured{
+    width: 960px;
+    height: 480px;
+    background-color: burlywood;
+}
+.Blog{
+    width: 960px;
+    height: 240px;
+}
+.Testimonials{
+    width: 480px;
+    height: 480px;
+    background-color: coral;
+    flex-basis:;
+}
+.About{
+    width: 480px;
+    height: 480px;
+    background-color: darkorange;
+}
+.Brands{
+    width: 960px;
+    height: 120px;
+    background-color: darkcyan;
+}
+.Footer{
+    width: 960px;
+    height: 180px;
+    background-color: forestgreen;
+}
+
+/*모듈 작업*/
+.Grid{
+    background-image: url(../images/grid-system.png);
+    background-blend-mode: overlay; 
+}
+/* 폰트 */
+html{
+    font-size:  10px;
+    line-height: 1.5;
+    color: #222222;
+    font-family: sans-serif;
+}
+/* 헤더 */
+.Header-wrapper{
+    display: flex;
+}
+.Header {
+	display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    height: 80px;
+}
+
+.Header img[src*="hamberger"]{
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.Header img[src*="aware"]{
+    padding: 10px;
+    margin-right: 39px;
+}
+.menu-left {
+	display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+.menu-left ul{
+    display: flex;
+    flex-direction: row;	
+    list-style: none;
+}
+.menu-left button{
+    height: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 14px;
+    border: 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.4rem;
+    background: white url(../images/icon-arrow-down.png) right no-repeat;
+}
+.menu-right {
+	display: flex;
+    flex-direction: row-reverse;
+  
+}
+.menu-right ul{
+	display: flex;
+    list-style: none;
+}
+.menu-right button{
+    height: 80px;
+    padding: 10px;
+    border: 0;
+    margin-right: 18px;
+    background-color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.4rem;
+}
+
+/*슬라이더*/
+.Slider{
+    display: flex;
+}
+.slider-main{
+    display: flex;
+}
+.slider-sides{
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-sides img[src*="slides"]
+{
+    height: 120px;
+    width: 240px;
+}
+/*배너*/
+.Banners {
+	display: flex;
+    flex-direction: row;
+}
+
+/*피쳐*/
+.Featured {
+	display:flex;
+    width: 960px;
+    height: 480px;
+    flex-wrap: wrap;
+}
+.Featured > img{
+    box-sizing: border-box;    
+    width:240px;
+    height: 240px;
+	border-right: 1px solid #ececec;
+}
+.Featured > img:nth-of-type(5),
+.Featured > img:nth-of-type(6),
+.Featured > img:nth-of-type(7),
+.Featured > img:nth-of-type(8){
+    border-top: 1px solid #ececec;
+}
+
+/*블로그*/
+.Blog{
+    display: flex;
+    flex-direction: row;
+}
+.Blog-header,.Blog-02{
+    width: 240px;
+    height: 240px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+}
+.Blog-sides{
+    display:flex;
+    flex-direction: column;
+}
+.Blog-03,.Blog-04 {
+    width: 240px;
+    height: 120px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-top: 1px solid #ececec;
+}
+.Blog-01{
+    width: 240px;
+    height: 240px;
+    border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.Blog-01:hover{
+    background: url(../images/blog-photo-01.png);
+   width:240px;
+    height: 240px;
+}
+/*인포 페이지 - 테스트 모니터*/
