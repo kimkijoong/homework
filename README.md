@@ -1,4 +1,6 @@
-# 161007
+###### Front-End Develop SCHOOL
+
+# DAY 08
 
 ## 오전 시간
 
@@ -141,10 +143,11 @@
 - ※ `${1:ko-KR}` : ko-KR의 영역을 블록 처리한다. 방법은 달러{숫자: 내용}
 
 
-### 순차 목록 비순차 목록 색상 변경
+### 사용자 정의 목록 디자인 (비순차, 순차, 정의)
 
-#### 비순차 목록
+#### 사용자 정의 - 비순차 목록 디자인
 ```html
+
 <ul class="ul-color">
   <li>d1 list
     <ul>
@@ -162,9 +165,11 @@
   <li>d1 list</li>
   <li>d1 list</li>
 </ul>
+
 ```
 
 ```css
+
 .ul-color,
 .ul-color ul,
 .ul-color ol {
@@ -191,12 +196,14 @@
 .ul-color li li li:before {
   content: "\25AA";
 }
+
 ```
 
 - ※ 비순차 목록은 가상요소를 사용하여였다.
 
-#### 순차 목록
+#### 사용자 정의 - 순차 목록 디자인
 ```html
+
 <ol class="ol-color">
   <li><div class="ol-color-content">d1 list</div>
     <ol>
@@ -213,6 +220,7 @@
   </li>
   <li><div class="ol-color-content">d1 list</div></li>
   <li><div class="ol-color-content">d1 list</div></li>
+  
 </ol>
 ```
 
@@ -224,6 +232,42 @@
 .ol-color .ol-color-content {
   color: black;
 }
+
 ```
 
 - ※ 순차 목록은 클래스요소를 사용하여, 각 컨텐츠를 감싸 색상을 지정했다.
+
+#### 사용자 정의 - 정의 목록 디자인
+```html
+<dl class="custom-ui-dl">
+  <dt>창의적 문제해결</dt>
+  <dd>더 향상된 결과를 위해, 폭넓은 시각에서 다양한 관점을 통합해 새로운 해결안을 제시함.</dd>
+  <dt>창의적 문제해결 도구</dt>
+  <dd>잘 알려진 창의적 문제 해결법 도출을 위한 방법론들로는 브레인 스토밍, 마인드 맵 등이 있다.</dd>
+</dl>
+```
+
+```css
+
+    .demo-dl dt {
+      font-weight: 700;
+      color: #69d59c;
+    }
+    .demo-dl dd {
+      position: relative;
+      width: 300px;
+      margin-left: 0;
+      margin-bottom: 1em;
+      padding-left: 1.5em;
+    }
+    .demo-dl dd::before {
+      content: '';
+      position: absolute;
+      top: 5%;
+      bottom: 5%;
+      left: 10px;
+      width: 0;
+      border-left: 3px solid #69d59c;
+    }
+
+```
