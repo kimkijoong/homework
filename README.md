@@ -271,3 +271,11 @@
     }
 
 ```
+
+#### Grid-system
+
+- ※ 그리드 시스템에서 컨텐츠를 가리지 않고 보이게 하려면 가상요소(:before)을 사용하여 position:absolute를 시키면 된다.
+- ※ `background-blend-mode: overlay;`을 사용하면 투명하게 보일 수 있다.
+- ※ 재사용 가능한 모듈을 만들면 빠르게 그리드 시스템이 적용된 wire-frame을 만들 수 있다.
+
+
