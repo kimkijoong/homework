@@ -1,0 +1,21 @@
+/*피쳐*/
+.Featured {
+	display:flex;
+    width: 960px;
+    height: 480px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.Featured img{
+    box-sizing: border-box;    
+    width:240px;
+    height: 240px;
+	border-right: 1px solid #ececec;
+    
+}
+.Featured > img:nth-of-type(5),
+.Featured > img:nth-of-type(6),
+.Featured > img:nth-of-type(7),
+.Featured > img:nth-of-type(8){
+    border-top: 1px solid #ececec;
+}

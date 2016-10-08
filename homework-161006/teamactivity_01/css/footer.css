@@ -1,0 +1,111 @@
+/* 푸터 */
+
+/* 카테고리 */
+.Category{
+    width: 960px;
+    height: 61px;
+    box-sizing: border-box;
+    background-color: #222222;
+    border-bottom: 1px solid #353535;
+    color: #fff;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.Category span{
+    position: relative;
+    margin: 0;
+    padding: 0 37px;
+    
+}
+.Category span:before{
+    position: absolute;
+    content: "•";
+    color: #656565;
+    left: 0;
+}
+.Category span:first-child:before{
+	content: "";
+}
+
+/*컴퍼니 인포메이션*/
+.company-info{
+    display: flex;
+}
+/*이메일 보내기 섹션*/
+.Send-Mail{
+    width:  480px;
+    height: 120px;
+    background-color: #222222;
+    order: 2;
+    box-sizing: border-box;
+    border-left: 1px solid ;
+    border-right: 1px solid ;
+    border-color: #353535;
+    
+}
+/*소셜 페이먼트*/
+.Socials-Payments {
+	display: flex;
+    flex-direction: column;
+    order: 3;
+}
+.SNS{
+    display: flex;
+    width: 240px;
+    height: 60px;
+    background-color: #222222;
+    box-sizing: border-box;
+    border-bottom: 1px solid #353535;
+    justify-content: center;
+    align-items: center;
+}
+.SNS img{
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.SNS button{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 60px;
+    background-color: transparent;
+}
+.Payments{
+    display: flex;
+    width: 240px;
+    height: 60px;
+    background-color: #222222;
+    justify-content: center;
+    align-items: center;
+}
+.Payments img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Payments button{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 60px;
+    background-color: transparent;    
+}
+/*카피라이트*/
+.Copyright {
+    display: flex;
+	width:  240px;
+    height: 120px;
+    background-color: #222222;
+    order: 1;
+    color: #7f7f7f;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Copyright img{
+	margin-bottom: 12px;
+}
+.Copyright span{
+    text-align: center;
+    line-height: 18px;	
+}

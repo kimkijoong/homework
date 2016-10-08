@@ -1,0 +1,60 @@
+/* 헤더 */
+.Header-wrapper{
+    display: flex;
+}
+.Header {
+	display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    height: 80px;
+}
+
+.Header img[src*="hamberger"]{
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.Header img[src*="aware"]{
+    padding: 10px;
+    margin-right: 39px;
+}
+.menu-left {
+	display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+.menu-left ul{
+    display: flex;
+    flex-direction: row;	
+    list-style: none;
+}
+.menu-left button{
+    height: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 14px;
+    border: 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.4rem;
+    background: white url(../images/icon-arrow-down.png) right no-repeat;
+}
+.menu-right {
+	display: flex;
+    flex-direction: row-reverse;
+  
+}
+.menu-right ul{
+	display: flex;
+    list-style: none;
+}
+.menu-right button{
+    height: 80px;
+    padding: 10px;
+    border: 0;
+    margin-right: 18px;
+    background-color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.4rem;
+}

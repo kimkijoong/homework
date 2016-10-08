@@ -1,0 +1,38 @@
+
+/*블로그*/
+.Blog{
+    display: flex;
+    flex-direction: row;
+}
+.Blog-header,.Blog-02{
+    width: 240px;
+    height: 240px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+}
+.Blog-sides{
+    display:flex;
+    flex-direction: column;
+}
+.Blog-03,.Blog-04 {
+    width: 240px;
+    height: 120px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-top: 1px solid #ececec;
+}
+.Blog-01{
+    width: 240px;
+    height: 240px;
+    border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.Blog-01:hover{
+    background: url(../images/blog-photo-01.png);
+   width:240px;
+    height: 240px;
+}
