@@ -70,7 +70,7 @@ html{
     height: 180px;
 }
 
-.Wrapper:before{
+.Wrapper.Grid:before{
     content: '';
     position: absolute;
 	background-image: linear-gradient(180deg, transparent 9px, #7400ff 9px), linear-gradient(90deg, hsla(237, 100%, 66%, 0.3), hsla(239, 100%, 79%, 0.3));

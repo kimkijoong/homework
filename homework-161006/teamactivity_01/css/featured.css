@@ -11,11 +11,86 @@
     width:240px;
     height: 240px;
 	border-right: 1px solid #ececec;
-    
+    vertical-align: top;
 }
 .Featured > img:nth-of-type(5),
 .Featured > img:nth-of-type(6),
 .Featured > img:nth-of-type(7),
 .Featured > img:nth-of-type(8){
     border-top: 1px solid #ececec;
+}
+
+[class*="Featured-content-0"]{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+[class*="Featured-text-0"]{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+.Featured-text-00 {
+	margin-top: 40px;
+}
+.Featured-text-00 > span:nth-of-type(1){
+    font-family: 'Oswald',sans-serif;
+    font-style: bold;
+    font-size: 1.8rem;
+    color: #1f4ba5;
+    margin-top: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.Featured-text-00 > span:nth-of-type(2){
+    font-family: 'Varela Round',sans-serif;
+    font-size: 1.4rem;
+    color: #868686;
+    margin-top: 20px;
+    line-height: 18px;
+}
+
+.Feetured-title-font{
+    font-family: 'Varela Round ',sans-serif;
+    font-size: 1.2rem;
+    color: #222222;
+}
+.Featured-price-font{
+    font-family: 'Oswald',sans-serif;
+    font-size: 1.2rem;
+    color: #222222;
+    font-style: bold;
+    position: absolute;
+    text-align: center;
+    margin-top: 168px;
+}
+.Featured-price-font-sale{
+    font-family: 'Oswald',sans-serif;
+    font-size: 1.2rem;
+    font-style: bold;
+    color: #ff3f2b;
+    position: absolute;
+    text-align: center;
+    margin-top: 168px;
+}
+
+.Featured-price-font-beforesale{
+    font-family: 'Oswald',sans-serif;
+    font-size: 0.8rem;
+    font-style: bold;
+    color: #a1a1a1;
+    text-decoration: line-through;
+    text-align: center;
+    margin-top: 141px;
+    margin-left: 150px;
+}
+
+.Featured-text-00 > img{
+    width: 16px;
+    height: 14px;
+    border: 0;
 }

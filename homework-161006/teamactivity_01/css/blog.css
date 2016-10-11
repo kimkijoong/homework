@@ -11,6 +11,10 @@
     box-sizing: border-box;
     border-top: 1px solid #ececec;
     border-right: 1px solid #ececec;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 .Blog-sides{
     display:flex;
@@ -30,9 +34,87 @@
     border-right: 1px solid #ececec;
     box-sizing: border-box;
     background-color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 .Blog-01:hover{
     background: url(../images/blog-photo-01.png);
-   width:240px;
+    width:240px;
     height: 240px;
+}
+.Blog-header,[class=*"Blog-0"]{
+    position: relative;
+   
+}
+[class*="Blog-content-0"]{
+    position: absolute;
+}
+.Blog-content-00 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.Blog-content-00 > span:nth-of-type(1){
+    font-family: 'Oswald',sans-serif;
+    font-style: bold;
+    font-size: 1.8rem;
+    color: #1f4ba5;
+    margin-top: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.Blog-content-00 > span:nth-of-type(2){
+    font-family: 'Varela Round',sans-serif;
+    font-size: 1.4rem;
+    color: #868686;
+    margin-top: 20px;
+    line-height: 18px;
+}
+[class*="Blog-content-0"]{
+    display: flex;
+    flex-direction: column;
+}
+
+.Blog-content-01 > span:nth-of-type(1),
+.Blog-content-02 > span:nth-of-type(1),
+.Blog-content-03 > span:nth-of-type(1),
+.Blog-content-04 > span:nth-of-type(1){
+	font-family: 'PT serif', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #868686;
+}
+.Blog-content-01 > span:nth-of-type(2),
+.Blog-content-02 > span:nth-of-type(2){
+    font-family: 'Varela Round',sans-serif;
+    font-size: 1.8rem;
+    color: #222222;
+}
+
+.Blog-content-01> span:nth-of-type(3),
+.Blog-content-02> span:nth-of-type(3){
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-style: bold;
+    color: #868686;
+}
+.Blog-content-03 > span:nth-of-type(2),
+.Blog-content-04 > span:nth-of-type(2) {
+    font-family: 'Varela Round',sans-serif;
+	font-size: 1.4rem;
+    color: #222222;
+}
+.Blog-content-00 > img{
+    width: 16px;
+    height: 14px;
+    border: 0;
+}
+.Blog-content-01 > span:nth-of-type(1), 
+.Blog-content-02 > span:nth-of-type(1),
+.Blog-content-01 > span:nth-of-type(2),
+.Blog-content-02 > span:nth-of-type(2){
+    padding-bottom: 20px;
 }
