@@ -67,6 +67,7 @@
     position: absolute;
     text-align: center;
     margin-top: 168px;
+    letter-spacing: 0.1em;
 }
 .Featured-price-font-sale{
     font-family: 'Oswald',sans-serif;
@@ -76,6 +77,7 @@
     position: absolute;
     text-align: center;
     margin-top: 168px;
+    letter-spacing: 0.1em;
 }
 
 .Featured-price-font-beforesale{
@@ -87,6 +89,7 @@
     text-align: center;
     margin-top: 141px;
     margin-left: 150px;
+    letter-spacing: 0.1em;
 }
 
 .Featured-text-00 > img{

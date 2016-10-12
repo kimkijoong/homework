@@ -4,6 +4,31 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+.Info-title-style{
+    font-family: 'Oswald',sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #1f4ba5;
+    text-align: center;
+    margin-top: 40px;
+}
+.qutote-style{
+    font-family: 'PT Serif',serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #868686;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    
+}
+.qutote-style:before {
+    content: url(../images/icon-quote.png);
+    display: block;
+    margin-bottom: 10px;
+}
 /*테스트 모니터*/
 .Testimonials {
 	width: 480px;
@@ -13,7 +38,51 @@
     border-top: 1px solid #ececec;
     border-right: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
+.test-chat{
+    position: absolute;
+    top:40px;
+    left:30px;
+}
+.test-reload{
+    position: absolute;
+    top: 37px;
+    right: 30px;
+}
+.photo-test{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 85px;
+    margin-left: 140px;   
+}
+.test-person-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 100px;
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+}
+.test-person-info > span:nth-of-type(1){
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.4rem;
+    color: #222222;
+    margin-bottom: 5px;
+}
+.test-person-info > span:nth-of-type(2){
+    font-family: 'PT Serif', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #b8b8b8;
+}
+
+
 
 /* 어바웃 */
 .About{
@@ -23,6 +92,86 @@
     box-sizing: border-box;
     border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    position: relative;
+}
+.About p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.4rem;
+    line-height: 24px;
+    color: #868686;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.about-est{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.4rem;
+    line-height: 24px;
+    color: #868686;
+}
+.about-bag{
+    position: absolute;
+    top:40px;
+    left:30px;
+}
+.photo-inf-wrapper {
+	display: flex;
+    flex-direction: row;
+    width: 480px;
+    height: 120px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.inf-box-01{
+    margin-right: 120px;
+}
+.inf-box-02{
+    margin-right: 60px;
+}
+.inf-box-04{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.inf-box-05{
+    margin-right: 60px;
+}
+.inf-box-03,.inf-box-04{
+    background-color: #1f4ba5;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.inf-box-03 span:nth-of-type(1),
+.inf-box-04 span:nth-of-type(1){
+    font-family: 'Oswald',sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    color: #fff;
+   
+}
+.inf-box-03 span:nth-of-type(2),
+.inf-box-04 span:nth-of-type(2){
+    font-family: 'PT Serif', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #fff;
+}
+.inf-box-03 p,.inf-box-04 p{
+    text-align: left;
+    line-height: 1;
+}
+.About > p{
+	margin: 0;
 }
 /* 브랜드 */
 .Brands{
