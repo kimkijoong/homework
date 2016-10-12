@@ -20,7 +20,7 @@
     color: #868686;
     line-height: 30px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 0;
     
 }
@@ -98,13 +98,14 @@
     text-align:center;
     position: relative;
 }
-.About p{
+.About > p{
     font-family: 'Varela Round', sans-serif;
     font-size: 1.4rem;
     line-height: 24px;
     color: #868686;
     padding-left: 30px;
     padding-right: 30px;
+    margin: 20px 0 0 0;
 }
 .about-est{
     position: absolute;
@@ -146,10 +147,7 @@
     width: 120px;
     height: 60px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
 }
 .inf-box-03 span:nth-of-type(1),
 .inf-box-04 span:nth-of-type(1){
@@ -168,10 +166,26 @@
 }
 .inf-box-03 p,.inf-box-04 p{
     text-align: left;
-    line-height: 1;
+    line-height: 1.2;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    position: relative;
 }
-.About > p{
-	margin: 0;
+.inf-box-04 > p:before{
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+    position: absolute;
+    content: url(../images/icon-map.png)
+}
+.inf-box-03 > p:before{
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+    position: absolute;
+    content: url(../images/icon-storage.png)
 }
 /* 브랜드 */
 .Brands{

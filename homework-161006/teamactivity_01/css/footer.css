@@ -1,4 +1,46 @@
 /* 푸터 */
+/* 이메일 */
+.Send-Mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.send-mail-box{
+    display: flex;
+   flex-direction: column;
+}
+.send-mail-box input{
+    box-sizing: border-box;
+    width: 360px;
+    height: 30px;
+    border: 0;
+    border-radius: 15px;
+    background:url('../images/icon-send-mail.png') 15px 50% no-repeat;
+    background-color: #393939;
+    padding-left: 45px;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.send-mail-box p{
+    color: #9d9d9d;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Varela Round',sans-serif;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mail-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
 
 /* 카테고리 */
 .Category{
