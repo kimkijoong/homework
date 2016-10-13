@@ -10,7 +10,7 @@ button,li,ul,a{
 
 /* 폰트 */
 html{
-    font-size:  10px;
+    font-size:  0.625em;
     line-height: 1.2;
     color: #222222;
     font-family: sans-serif;
