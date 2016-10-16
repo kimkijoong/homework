@@ -1,0 +1,86 @@
+    html, body{
+      margin: 0;
+      padding: 0;
+    }
+    .carousel{
+      position: relative;
+      margin: 0 auto;
+      max-width: 1024px;
+      margin-top: 100px;
+    }
+    .carousel-inner{
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+.carousel-open:checked + .carousel-item {
+    position: relative;
+    opacity: 100;
+}
+    .carousel-item {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.6s ease-out;
+    }
+.carousel-item img {
+    display: block;
+}
+    .carousel-control{
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      border: 1px solid #fff;
+      color: #ffffff;
+      cursor: pointer;
+      display: none;
+      line-height: 40px;
+      text-align: center;
+      font-size: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+    }
+    .carousel-control.prev {
+        left: 2%;
+    }
+    .carousel-control.next {
+        right: 2%;
+    }
+    .carousel-control:hover {
+        background: rgba(0, 0, 0, 0.8);
+        color: #aaaaaa;
+    }
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+    .carousel-indicators{
+      position: absolute;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      bottom: 5%;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    .carousel-indicators li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .carousel-bullet {
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        font-size: 35px;
+    }
+    .carousel-bullet:hover {
+        color: #999999;
+    }
+    #carousel-1:checked ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+    #carousel-2:checked ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+    #carousel-3:checked ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+      color: #428bca;
+    }
