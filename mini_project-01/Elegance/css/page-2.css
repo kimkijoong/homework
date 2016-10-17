@@ -1,0 +1,126 @@
+.container {
+    position: relative;
+    height: 1334px;
+    background: #f3f3f3 url(../images/img-02-model.png) no-repeat bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-maintext-02 {
+    padding-top: 142px;
+    text-align: center;
+}
+.page-maintext-02 p:nth-of-type(1){
+    font-size: 186px;
+    font-family: 'Savoye LET', serif;
+    line-height: 135px;
+    color: #E5D3C2;
+}
+.page-maintext-02 p:nth-of-type(2){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #EFDECC;
+    margin-top: 60px;
+}
+
+
+.email-container{
+    margin-top: 90px;
+}
+.pw-container {
+	margin-top: 30px;
+}
+fieldset{
+    border: 0;
+}
+input{
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #3a3a3a;
+    color: #EFDECC;
+    height: 62px;
+    width: 420px;
+}
+input[id="email"] {
+	text-align: center;
+    font-size: 40px;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+input[id="password"] {
+	text-align: center;
+    font-size: 40px;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+.forgotpw{
+    margin-top: 30px;
+}
+.forgotpw a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #B4B4B4;
+    text-decoration: none;
+}
+.forgotpw a:hover{
+    color: #fff;
+}
+/* sign-buttons */
+.sign-buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1026px;
+}
+.sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 83px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 29px;
+    background-color: transparent;
+}
+.sign-in-facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 83px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background: #2553B3;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+    font-size: 30px;
+    box-sizing: border-box;
+    
+}
+.sign-in a{
+    box-sizing: border-box;
+    padding: 20px 100px;
+    color: #fff;
+    text-decoration: none;
+}
+.sign-in:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+.sign-in:hover a{
+    color: #bbb;
+}
+
+.sign-in-facebook a{
+    box-sizing: border-box;
+    padding: 20px 100px;
+    color: #fff;
+    text-decoration: none;
+}
+.sign-in-facebook:hover{
+    background-color: #214694;
+}
+.sign-in-facebook:hover a{
+    color: #bbb;
+}

@@ -1,0 +1,14 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+}
+.wrapper{
+    width: 750px;
+    height: 1334px;
+    margin: 0 auto;
+    background-color: white;
+}
+p{
+    margin: 0;
+}
