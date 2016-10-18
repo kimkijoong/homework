@@ -4,7 +4,7 @@
 }
 .shopping-box{
     display: flex;
-    padding: 20.5px 20.5px 17.5px;
+    padding: 20px 20px 17px;
     flex-direction: column;
 }
 .row1{
@@ -16,7 +16,7 @@
 .row2{
     flex-basis: 100%;
     display: flex;
-    height: 109.5px;
+    height: 109px;
     position: relative;
 }
 .col-2-2{
@@ -26,7 +26,7 @@
 }
 .col-1-2{
     flex-basis: 100%;
-    height: 109.5px;
+    height: 109px;
     background-color: aquamarine;
 }
 .box1{
@@ -54,39 +54,39 @@
 .shoplist-01 img:nth-of-type(1),
 .shoplist-02 img:nth-of-type(1){
     position: absolute;
-    top:38.34px;
+    top:38px;
     left:101px;
 }
 .shoplist-01 img:nth-of-type(2){
     position: absolute;
-    top:-4.5px;
-    left:205.5px;
+    top:-4px;
+    left:205px;
 }
 
 .shoplist-02 img:nth-of-type(2){
     position: absolute;
-    top:-25.5px;
-    left:183.5px;
+    top:-25px;
+    left:183px;
 }
 .shoplist-03 img{
     position: absolute;
     top:14px;
-    left:93.5px;
+    left:93px;
 }
 .shoplist-04 img{
     position: absolute;
-    top:27.5px;
-    left:88.5px;
+    top:27px;
+    left:88px;
 }
 .shoplist-05 img{
     position: absolute;
-    top:13.5px;
+    top:13px;
     left:98px;
 }
 .shoplist-06 img{
     position: absolute;
     top:30px;
-    left:76.5px;
+    left:76px;
 }
 .shoplist-07 img{
     position: absolute;
@@ -95,8 +95,8 @@
 }
 .shoplist-08 img{
     position: absolute;
-    top:11.5px;
-    left:93.5px;
+    top:11px;
+    left:93px;
 }
 [class*="col-"] p{
     font-family: 'Playfair Display', serif;
@@ -108,4 +108,29 @@
     top: 50%;
     transform: translateY(-50%);
     padding-left: 23.04px;
+}
+.content-box-1,.content-box-1 a,
+.content-box-2,.content-box-2 a{
+    position: relative;
+	width: 100%;
+    height: 93px
+}
+
+.content-box-1 a:hover::before{
+    position: absolute;
+    content: '';
+    width: 335px;
+    height: 93px;
+    z-index: 10000;
+    background-color: black;
+    opacity: 0.2;
+}
+.content-box-2 a:hover::before{
+    position: absolute;
+    content: '';
+    width: 164px;
+    height: 109px;
+    z-index: 10000;
+    background-color: black;
+    opacity: 0.2;
 }
