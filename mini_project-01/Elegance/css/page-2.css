@@ -1,34 +1,35 @@
 .container {
     position: relative;
-    height: 1334px;
+    height: 667px;
     background: #f3f3f3 url(../images/img-02-model.png) no-repeat bottom;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .page-maintext-02 {
-    padding-top: 142px;
+    padding-top: 71px;
     text-align: center;
 }
 .page-maintext-02 p:nth-of-type(1){
-    font-size: 186px;
+    font-size: 93px;
     font-family: 'Savoye LET', serif;
-    line-height: 135px;
+    line-height: 67.5px;
     color: #E5D3C2;
 }
 .page-maintext-02 p:nth-of-type(2){
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: 25px;
     color: #EFDECC;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 
 .email-container{
-    margin-top: 90px;
+    margin-top: 45px;
 }
 .pw-container {
-	margin-top: 30px;
+	margin-top: 15px;
 }
 fieldset{
     border: 0;
@@ -38,25 +39,25 @@ input{
     background-color: transparent;
     border-bottom: 1px solid #3a3a3a;
     color: #EFDECC;
-    height: 62px;
-    width: 420px;
+    height: 31px;
+    width: 210px;
 }
 input[id="email"] {
 	text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'Source Sans Pro',sans-serif;
 }
 input[id="password"] {
 	text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-family: 'Source Sans Pro',sans-serif;
 }
 .forgotpw{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .forgotpw a{
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 12px;
     color: #B4B4B4;
     text-decoration: none;
 }
@@ -69,39 +70,39 @@ input[id="password"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1026px;
+    margin-top: 513px;
 }
 .sign-in{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 370px;
-    height: 83px;
-    border: 2px solid #fff;
-    border-radius: 50px;
+    width: 185px;
+    height: 41.5px;
+    border: 1px solid #fff;
+    border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 15px;
     color: #fff;
-    margin-bottom: 29px;
+    margin-bottom: 14.5px;
     background-color: transparent;
 }
 .sign-in-facebook{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 370px;
-    height: 83px;
-    border-radius: 50px;
+    width: 185px;
+    height: 41.5px;
+    border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
     background: #2553B3;
-    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
-    font-size: 30px;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.16);
+    font-size: 15px;
     box-sizing: border-box;
     
 }
 .sign-in a{
     box-sizing: border-box;
-    padding: 20px 100px;
+    padding: 10px 50px;
     color: #fff;
     text-decoration: none;
 }
@@ -114,7 +115,7 @@ input[id="password"] {
 
 .sign-in-facebook a{
     box-sizing: border-box;
-    padding: 20px 100px;
+    padding: 5px 25px;
     color: #fff;
     text-decoration: none;
 }

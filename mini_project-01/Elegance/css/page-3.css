@@ -1,0 +1,111 @@
+.container{
+    background-color: #f2f2f2;
+    height: inherit;
+}
+.shopping-box{
+    display: flex;
+    padding: 20.5px 20.5px 17.5px;
+    flex-direction: column;
+}
+.row1{
+    flex-basis: 100%;
+    display: flex;
+    height: 93px;
+    position: relative;
+}
+.row2{
+    flex-basis: 100%;
+    display: flex;
+    height: 109.5px;
+    position: relative;
+}
+.col-2-2{
+    flex-basis: 100%;
+    height: inherit;
+    background-color: aquamarine;
+}
+.col-1-2{
+    flex-basis: 100%;
+    height: 109.5px;
+    background-color: aquamarine;
+}
+.box1{
+    margin-bottom: 7px;
+}
+.col-mr{
+    margin-right: 7px;
+}
+.shoplist-01,.shoplist-04{
+    background-color: #EFDECC;
+}
+.shoplist-02,.shoplist-08{
+    background-color: #FBE0E0;
+}
+.shoplist-03,.shoplist-06,.shoplist-07{
+    background-color: #fff;
+}
+.shoplist-05{
+    background-color: #CEEFCC;
+}
+[class*="shoplist-0"]{
+    position: relative;
+    overflow: hidden;
+}
+.shoplist-01 img:nth-of-type(1),
+.shoplist-02 img:nth-of-type(1){
+    position: absolute;
+    top:38.34px;
+    left:101px;
+}
+.shoplist-01 img:nth-of-type(2){
+    position: absolute;
+    top:-4.5px;
+    left:205.5px;
+}
+
+.shoplist-02 img:nth-of-type(2){
+    position: absolute;
+    top:-25.5px;
+    left:183.5px;
+}
+.shoplist-03 img{
+    position: absolute;
+    top:14px;
+    left:93.5px;
+}
+.shoplist-04 img{
+    position: absolute;
+    top:27.5px;
+    left:88.5px;
+}
+.shoplist-05 img{
+    position: absolute;
+    top:13.5px;
+    left:98px;
+}
+.shoplist-06 img{
+    position: absolute;
+    top:30px;
+    left:76.5px;
+}
+.shoplist-07 img{
+    position: absolute;
+    top:41px;
+    left:80px;
+}
+.shoplist-08 img{
+    position: absolute;
+    top:11.5px;
+    left:93.5px;
+}
+[class*="col-"] p{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;    
+    font-size: 11px;
+    color: #000000;
+    letter-spacing: 0.65px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 23.04px;
+}
