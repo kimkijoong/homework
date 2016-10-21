@@ -1,0 +1,76 @@
+.main
+  background-image: url(../images/img-page-7-model.png)
+  height: 584px
+  background-size: contain
+  background-repeat: no-repeat
+  background-color: #f2f2f2
+  box-sizing: border-box
+  position: relative
+
+.price
+  padding-top: 258px
+  text-align: center
+  h2
+    position: absolute
+    top: 0
+    left: -1000em
+    z-index: 1000
+    display: block
+  p
+    display: inline-block
+    &:nth-of-type(1)
+      font:
+        size: 22px
+        family: 'Montserrat', sans-serif
+      padding-right: 11px
+    &:nth-of-type(2)
+      font:
+        size: 14px
+        family: 'Montserrat', sans-serif
+      text-decoration: line-through
+.item-desc
+  h1
+    font:
+      family: 'Montserrat', sans-serif
+      size: 14px
+      weight: 200
+    color: #232323
+    text-align: center
+    padding-top: 8px
+  p
+    text-align: center
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 14px
+    font:
+      size: 10px
+      family: 'Source Sans Pro',sans-serif
+    color: #494949
+.option
+  padding:
+    left: 20px
+    right: 20px
+    top: 25px
+.item-size
+  width: 50%
+  float : left
+
+
+.item-color
+  float: left
+  width: 50%
+
+.Add-item
+  clear: both
+
+.carousel
+  position: absolute
+  top: 238px
+  left: 50%
+  transform: translateX(-50%)
+  p
+    float: left
+  &::after
+    content: ""
+    display: block
+    clear: both

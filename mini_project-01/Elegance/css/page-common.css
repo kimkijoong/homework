@@ -17,20 +17,22 @@ p{
 
 header{
     width: 100%;
-    height: 83.5px;
-    background-color: #ffffff; 
+    height: 83px;
+    background-color: #ffffff;
     position: relative;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 0px 0px #DADADA;
+
 }
 .header-title{
     color: #494949;
     display: flex;
     justify-content: center;
     height: inherit;
-    padding-top: 35px;
+    padding-top: 38px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    box-shadow: 0px 1px 0px 0px #DADADA;
 }
 
 .navigation-button{
@@ -40,11 +42,29 @@ header{
 }
 .bags-button{
     position: absolute;
-    left:309px;
-    top: 42.5px;
+    left: 309px;
+    top: 42px;
 }
 .search-button{
     position: absolute;
     left: 342px;
-    top: 42.5px;
+    top: 42px;
+}
+.arrow-button{
+    position: absolute;
+    left: 20px;
+    top: 42px;
+}
+.share-button{
+  position: absolute;
+  left: 344px;
+  top: 42px;
+}
+
+[class*="-button"] a{
+  display: block;
+}
+[class*="-button"] img{
+  vertical-align: top;
+  display: block;
 }
