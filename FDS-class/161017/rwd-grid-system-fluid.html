@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>rwd-grid-system-fluid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    link:favicon-->
+    <link rel="stylesheet" href="../Modules/CSS/initialization/normalize.min.css">
+    <link rel="stylesheet" href="grid-system-mobile-first.css">
+    <style>
+        html{
+            background: #fff;
+        }
+        .app{
+            min-height: 100vh;
+            color : #323232;
+            background: #ffd219;            
+        }
+        .app * {
+            margin-top: 0;
+        }
+        .app .row :first-child{
+            background: #fff;
+            color: #9c7d0f;
+        }
+    </style>
+</head>
+<body>
+   <div class="app container show-grid" lang="en">
+        <div class="row">
+             <div class="column m1-2 t2-8">
+                 <h1 lang="en">Mobile First</h1>
+             </div>
+        <div class="column m1-2 t6-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi itaque reiciendis eius eveniet commodi doloribus, nihil cupiditate iure explicabo soluta dolorum rem cum ratione amet placeat, sunt libero reprehenderit excepturi.</p>
+        </div>
+        </div>
+         <div class="row">
+          <div class="column m1-3"><img src="bird.jpeg" alt=""></div>
+          <div class="column m2-3">column m2-3</div>
+        </div>
+        <div class="row">
+          <div class="column m1-4">column m1-4</div>
+          <div class="column m3-4">column m3-4</div>
+        </div>
+    </div>
+
+</body>
+</html>

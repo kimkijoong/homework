@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .btn-edit {
+	position: relative;
+    width: 40px;
+    height: 40px;
+    }
+     .btn-tip{
+        display: none;
+    }
+    .btn-edit:hover >.btn-tip,
+    .btn-edit:focus >.btn-tip{
+        position: absolute;
+        width: 400px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border: 1px solid gray;
+        margin-left: 5px;
+    }    
+   
+</style>
+<body>
+    <button class="btn-edit">
+    <div class="btn-tip">아래 전자신문 편집판에 대해 의견주시면 옴부즈맨의 자료로 활용됩니다</div>
+    </button>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+.container{
+width: 1380px;
+    margin-left:auto;
+    margin-right: auto;
+}
+[class="col-"]{
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-clip: content-box;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col-1 {width: 105px;}
+.col-2 {width: 220px;}
+.col-3 {width: 335px;}
+.col-4 {width: 450px;}
+.col-5 {width: 565px;}
+.col-6 {width: 680px;}
+.col-7 {width: 795px;}
+.col-8 {width: 910px;}
+.col-9 {width: 1025px;}
+.col-10{width: 1140px;}
+.col-11{width: 1255px;}
+.col-12{width: 1370px;}
+
+.push-1{ margin-left: 10px;}
+.push-2{ margin-left: 10px;}
+.push-3{ margin-left: 10px;}
+.push-4{ margin-left: 10px;}
+.push-5{ margin-left: 10px;}
+.push-6{ margin-left: 10px;}
+.push-7{ margin-left: 10px;}
+.push-8{ margin-left: 10px;}
+.push-9{ margin-left: 10px;}
+.push-10{ margin-left:10px;}
+.push-11{ margin-left:10px;}
+.push-12{ margin-left:10px;}
+
+.prefix{}
+
+
+
+/*
+
+function clacWidth(컬럼갯수 = Z){
+    return (컬럼의 폭) * Z((거터의 반)*2)* (Z - 1);
+}
+
+*/
+
+/* 패딩을 사용하면 색이 패딩안까지만 먹기때문에 background clip에서 content-box까지 영역으로 해서 배경색을 먹게한다. */
+

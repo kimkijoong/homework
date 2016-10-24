@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>박스모델-float</title>
+  <style>
+    *{
+      margin: 0;
+    }
+    div{
+      background: yellow;
+      width: 500px;
+  /* clear: both; 는 강제로 마진을 추가함, 플로트를 전통적인 해제하는 방범이 클리어 그래서 마진을 추가해도 기존 강제 마진보다 작으면 적용이 안되는 것처럼 보인다. */
+
+    }
+    h1{
+      background: ;
+      float: left;
+    }
+    h2{
+      background: silver;
+    }
+    h3{
+      background: pink;
+    }
+    p{
+      background: lime;
+      width: 500px;
+    }
+    p::after{
+      content: "";
+      background: aqua;
+      display: block;
+      clear: both;
+    }
+
+    img{
+      float: right;
+      position: relative;
+      right: -50px;
+    }
+    .note{
+      clear: none;
+      height: 100px;
+      overflow: auto;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="box">
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+  </div>
+  <h3>제목3</h3>
+  <p>
+    <img src="images/news.gif" alt="" />
+      초기 흥행에 성공한 아이폰7에 대한 결함들이 속속 제기되면서
+  </p>
+  <div class="note">
+
+야마시타는 2011년 1월부터 5월까지 국내외를 도는 단독 아시아 투어를 실시했지만, 이 준비 단계의 2010년 가을경부터 솔로 활동의 희망을 품어, 동투어를 끝낸 6월, 쟈니 키타가와 사장에게 〈솔로로 자신 힘을 시험하고 싶다〉라고 상담하고 있었다. 이것에 대해서는 KAT-TUN을 탈퇴해 솔로 활동을 실시하고 있는 아카니시 진의 영향도 소문이 떠돌았지만, 쟈니즈 사무소 측은 부정해, 후일 야마시타 자신도 부정하고 있다[5][6].
+
+니시키도는 NEWS 결성 당시부터의 칸쟈니∞멤버로서도 활동해 왔지만, 골든 타임의 레귤러 프로그램이 시작하는 등 칸쟈니∞로의 활동이 증가하고 있었다. 그 때문에, 겸임을 계속하는 것에는 무리가 있다고 사무소측이 판단하였고, 본인도 이것을 받아 들였다.(덧붙여 탈퇴에 관해서는 〈니시키도로부터 신청했다〉라는 보도도 있다.)
+  </div>
+</body>
+</html>

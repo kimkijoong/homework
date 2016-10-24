@@ -1,0 +1,30 @@
+//믹스인(코드 섞어서 생성한 것을 붙일 수 있도록)
+@include mixin
+
+=transition($param: all 0.4s)
+  -webkit-transition: $param
+  -moz-transition: $param
+  -o-transition: $param
+  transition: $param
+
+
+=hover-link($padding-bottom: 2px, $border-bottom: 1px solid #767676)
+  text-decoration: none
+  &:hover, &:focus
+    padding-bottom: $padding-bottom
+    border-bottom: $border-bottom
+
++hover-link
+
+
+=transition($property: all, $duration: 400ms, $easing-function: linear, $delay: null)
+
+body
+  +transition(opacity 0.4s ease)
+
+
+@mixin linear-gradient($gradient-color...)
+  background-color: $gradient-color
+
+.round1
+  +background-origin

@@ -1,0 +1,8 @@
+.some{
+  width: 10px;
+  auto: ;
+  border: 2px solid currentColor;
+  text-align: justify;
+  text-align-last: left;
+  color: #30120f;
+}

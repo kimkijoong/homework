@@ -1,0 +1,44 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  background: #ccc;
+}
+
+.magazine{
+  display: block;
+  background: yellow;
+  margin: 0 auto;
+  width: 1440px;
+  height: 900px;
+}
+.side-title *{
+  margin: 0;
+  color : #fff;
+}
+
+.side-title{
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translateX(-100%);
+  background: black;
+  height: 100px;
+}
+.side-title p{
+  color: #fff;
+}
+.magazine-photo {
+
+}
+
+.magazine-photo img{
+  width: auto;
+  height: 100vh;
+  margin-left: 100px;
+}
+.magazine-text-pages{
+  float: left;
+}

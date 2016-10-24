@@ -1,0 +1,549 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+
+/* ===========================
+   스타일 초기화
+	 ============================ */
+html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,fieldset{
+	margin: 0;
+	padding: 0;
+}
+ul{
+  list-style: none;
+}
+img, fieldset{
+  border: 0;
+}
+/* abbr : 약자를 풀어쓰는 것을 밑줄로 표시 예를 들어 CSS를 오버롤 하면 캐스케이딩 스타일 시트라고 뜨는 것 (파이어폭스에서) 오버롤 할때 보임)*/
+
+/* 숨김 콘텐츠 */
+.a11y, .hidden, legend{
+	background: #ff0;
+	position: absolute;
+	left: -9999em;
+}
+
+/* ===========================
+   본문 스타일
+============================ */
+html{
+	font-size: 0.625em; /* 10px = 0.625em , 16px = 1em */
+}
+
+body{
+  color: #181818;
+	font-family: 'Noto Sans Regular';
+	font-size: 1.4rem;
+	background: #fff;
+	line-height: 1.2;
+}
+
+
+
+/* ===========================
+   링크 스타일
+  ============================ */
+a:link{ /* a:link 는 아직 방문하지 않은 링크일때를 의미 */
+  text-decoration: none;
+  color: inherit; /* inherit 는 상속받은 값을 무조건 적용 */
+}
+a:visited{ /* a:visited 는 아직 방문한 링크일때를 의미 */
+  text-decoration: none;
+  color: #666;
+}
+a:hover, a:focus{
+  color: #f00;
+}
+a:focus{
+  outline: 1px dotted #333;
+	/* 보통은 solid 속성으로 라인을 표기를 많이 한다 각 브라우저에서 비슷한 연출을 보이기 때문이다 이 경우는 키보드로 해당 컨텐츠에 올렸을때 아웃라인을 따로 보이게 하기 위해서
+		호버와 따로 정의한 것이다.
+	*/
+}
+
+
+
+/* ===========================
+   레이아웃
+	 ============================ */
+
+body{
+  margin: 0;
+}
+.wrapper{
+  background-color: silver;
+}
+.header, .visual, .main, .slogan, .footer{
+  width: 940px;
+  margin: 0 auto;
+	box-sizing:  border-box;
+}
+
+.header{
+  background-color: #fff;
+}
+
+.main{
+  background-color: #fff;
+  min-height: 400px;
+  display: flex; /* 아래의 코드는 디스플레이가 flex일때 사용 */
+  flex-direction: row;
+  justify-content: space-around; /* space-around 균등하게 여백 제공 */
+  flex-wrap:nowrap;  /* 이 기능은 보더값을 알아서 조정해준다.nowrap으로 할때는 컨텐츠의 크기가 전체 폭의 크기를 넘으면 알아서 아래로 넘어가게 된다*/
+  padding: 30px 15px;
+	/* 보더 박스가 위드에 보더와 패딩값이 포함되서 계산되기 때문(한마디로 보더랑 패딩을 무시하는 효과 무시하는 것은 아니지만)에 위의 15px을 더한 값 만큼 상자가 늘어나지 않는다.
+	  기본의 컨텐츠박스(보더,패딩,컨텐트 더함) 방식으로 하면
+	   패딩 15px만큼 기존 width에 포함이 되기때문에 보더 박스 방식을 적용한 것이다.*/
+/* Box model에 영향을 주는건 display, position, float,flex */
+	border-radius: 15px 15px 0 0;
+}
+
+
+.column1{
+  width: 250px;
+  order: 1; /* order는 컨텐츠의 순서를 1번 2번 3번이런 순서를 코딩을 쓴 순서가 아니고 임의로 지정할 수 있다 */
+}
+.column2{
+  width: 380px;
+  order: 2;
+}
+.column3{
+  width: 190px;
+  order: 3;
+}
+.slogan{
+  background-color: lime;
+  height: 10vh;
+}
+.footer-wrap{
+  background-color: pink;
+}
+.footer{
+  background-color: yellow;
+  height: 10vh;
+}
+
+
+/* ===========================
+ 헤더
+============================ */
+
+.header{
+  position: relative;
+  /* relative는 자기가 있던 위치를 기준으로 움직인다. 내가 있던 자리는 유지가 된다
+  position: absolute만 블록 성격을 가짐
+  */
+	padding: 0 30px 42px;
+	border-radius: 0 0 15px 15px;
+}
+/* ===========================
+  로고
+============================ */
+.logo{
+  position: absolute;
+  top: 50px;
+  left: 60px;
+}
+
+/* ===========================
+  안내링크
+============================ */
+
+.info-menu{
+  text-align: right;
+  /* display: flex; /* 플렉스를 쓰면 수평으로 됨*/
+  /* justify-content: flex-end; /* 끝부터 정렬 */
+  padding: 2px 0;
+	position: relative;
+	right: -10px;
+}
+.info-menu *{
+  display: inline-block;
+  /* *{ }=> 요소 전부 선택 이경우에는 li와 a태그 다 선택하기 그래서 둘다 inline-block이 적용됨*/
+}
+.info-menu li{
+/* inline은 width height를 할수 없는데, inline-block은 width height를 가질 수 있다. 왜냐하면 inline-block을 박스모델로 인식하기 때문이다. inline-block은 IE7이상에서 사용가능*/
+}
+.info-menu li::before{
+  content: ":";
+}
+.info-menu li:first-child::before{
+  content: "" /* !important 이건 중요도를 올리는 태그 */;
+}
+
+.info-menu a{
+  padding: 8px 10px;
+  text-transform: uppercase;
+}
+
+/*============================
+	메인 메뉴
+=============================*/
+.main-menu{
+	background: linear-gradient(to bottom, #ffbb00 0%,#ff7d32 30%,#ff7d32 70%,#ffbb00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background-color: #ff7d32;
+	padding-left: 217px;
+	height: 45px;
+	border-top: 2px solid #000;
+}
+.main-menu > li{
+	float: left;
+	font-family: 'Noto Sans Bold';
+	position: relative;
+}
+.main-menu a{
+	outline: 0;
+}
+
+.main-menu > li > a{
+	color: #fff;
+	padding: 0 20px;
+	border-left: 1px solid #fff;
+	line-height: 45px;
+	font-size: 1.6rem;
+
+	display: block;
+	text-shadow: 1px 0 0 rgba(0,0,0,0.2),0 1px 0 rgba(0,0,0,0.2),-1px 0 0 rgba(0,0,0,0.2), 0 -1px 0 rgba(0,0,0,0.2);
+	/* x좌표, y좌표, 블러값, 색상 */
+}
+
+.main-menu > li > a:hover, .main-menu > li > a:focus{
+
+	color: #ff0;
+}
+.main-menu > li > a:hover::after, .main-menu > li > a:focus::after {
+	content:"";
+	display: block;
+	border-top: 2px solid #000;
+}
+
+.main-menu ul{
+	position: absolute;
+	top: 47px;
+	white-space: nowrap;
+}
+
+.about-html{
+	left: 0;
+	display: none;
+}
+.about-css{
+	left: 0;
+	display: none;
+}
+.web-standard{
+	left: 0;
+	display: none;
+}
+.web-accessibility{
+	left: -195px;
+	display: none;
+}
+.qna{
+	left: -230px;
+	display: none;
+}
+.archive{
+	right: -25px;
+	display: none;
+}
+
+.main-menu ul li, .main-menu ul a{
+	display: inline-block;
+}
+.main-menu ul a{
+	padding: 10px;
+}
+.main-menu ul a::before{
+	content: "r";
+	font-family: "webcafeIcon";
+	position: relative;
+	top: 2px;
+}
+.main-menu ul a:hover::before,.main-menu ul a:focus::before{
+	content: "c";
+}
+
+/* ===========================
+ 비 주 얼 ~~!!!! 반짝반짝
+============================ */
+
+/*   텍스트 애니메이션   */
+.visual{
+	height: 120px;
+	position: relative;
+}
+
+@keyframes text-ani {
+	0%{
+		font-size: 12px;
+		opacity: 0;
+		transform: translate(0,0);
+	}
+	100%{
+		font-size: 24px;
+		opacity: 1;
+		transform: translate(400px,70px);
+	}
+}
+/* 텍스트 애니메이션 */
+.visual-text{
+	position: absolute;
+	font-family: Georgia, serif;
+	background: yellow;
+/*
+	animation-name: text-ani;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-play-state: paused;
+*/
+	animation: text-ani 1s forwards ease-in-out;
+	/* 위의 코드를 한줄로 표현하는 것 */
+}
+@keyframes flower_ani {
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+/* 배경 애니메이션 */
+.visual::before, .visual::after{
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120px;
+	animation: flower_ani 2s infinite alternate;
+}
+.visual::before{
+/*
+	background-color: yellow;
+	background-image: url(images/ani_flower_01.png), url(images/ani_flower_02.png);
+	background-repeat: no-repeat;
+	background-position: 0 -15px, 670px 0;
+*/
+	background: url(images/ani_flower_01.png) no-repeat 0 -15px, url(images/ani_flower_02.png) no-repeat 670px 0;
+}
+.visual::after{
+	background: url(images/ani_flower_03.png) no-repeat 300px 0, url(images/ani_flower_04.png) no-repeat 800px 15px;
+	animation-delay: 1s;
+}
+
+/* ======================================================
+   메인 콘텐츠 - 로그인, 유효성검사 배너링크, 웹 관련 용어
+======================================================= */
+/* 로그인 */
+.login{
+	background: #bc6425 radial-gradient(circle at top right, #ffbb00 ,#ff7d32 );
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);;
+}
+.login-subject{
+	color: #ff0;
+	font-size: 1.5rem;
+	font-family: 'Noto Sans Bold';
+}
+.login form{
+	background: #fff;
+	border-radius: 5px 5px 0 0;
+	margin-top: 15px;
+	padding: 10px 10px 0 10px;
+}
+.login fieldset{
+	position: relative;
+	border-bottom: 1px solid #999;
+}
+.user-email, .user-pw{
+	padding-bottom: 10px;
+ }
+.login label{
+	display: inline-block;
+	width: 4em;
+}
+.login input{
+	box-sizing: border-box;
+	width: 90px;
+	height: 20px;
+	border: 1px solid #999;
+	padding: 1px 1px 1px 5px;
+}
+.btn-login{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 2px;
+	font-weight: bold;
+	border:1px solid #ff4e00;
+	border-radius: 3px;
+	background-color: #fb5d1f;
+	background-image: linear-gradient(to bottom, #fe5f18 0%,#fa4306 100%);
+}
+.member{
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+	padding: 2px 10px;
+}
+.member::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.signup{
+	float: left;
+}
+.find{
+	float: right;
+}
+.member a{
+	display: block;
+	padding: 8px 0;
+	letter-spacing: -1px;
+}
+.member a::before{
+	content: "g";
+	font-family: 'webcafeIcon';
+	position: relative;
+	top: 2px;
+	color: #f00;
+}
+
+/* 유효성 검사 배너 링크 */
+.validation{
+	margin-top: 20px;
+}
+.validation li{
+	margin-bottom: 10px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #999;
+	border-radius: 15px 15px 15px 15px;
+	background: url(images/validation_icon.png) no-repeat 25px 50% /20px 20px, linear-gradient(to bottom, #ccc 0%, #666 100%);
+	text-indent: 55px;
+}
+.validation a{
+	display: block;
+}
+/* 웹 관련 용어 */
+/*
+.term{
+ background: gray;
+ border: 1px solid black;
+ border-radius: 5px 5px 5px 5px;
+ padding: 10px;
+}
+.term-subject{
+	font-size: 16px;
+	background: yellow;
+	margin-bottom: 15px;
+}
+.term-list{
+
+}
+.term-list-subject{
+	background: pink;
+}
+
+.term-list-brief{
+	background: skyblue;
+}
+.term::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+*/
+.term{
+	boder: 1px solid #999;
+	border-radius: 5px;
+	background: linear-gradient(to bottom, #ccc 0%, #aaa 100%);
+	padding: 10px;
+}
+.term-subject{
+	font-size: 1.5rem;
+	font-family: 'Noto Sans Bold'
+}
+.term a{
+	display: block;
+	margin-top: 10px;
+}
+.term-list{
+	overflow: hidden;
+}
+.term-list-subject, .term-list-brief{
+	float: right;
+	width: 160px;
+}
+.term-list-subject{
+	margin-top: -2px;
+}
+.term-list-thumbnail{
+	float: left;
+}
+.term-list-thumbnail img{
+	display: block;
+}
+.term-list-brief{
+	line-height: 1.4;
+}
+/*
+.term a:nth-of-type(even) .term-list-subject,
+.term a:nth-of-type(even) .term-list-brief{
+	float: left;
+}
+.term a:nth-of-type(even) .term-list-thumbnail{
+	float: right;
+}
+*/
+
+/* 새소식 */
+.news{
+	position: relative;
+}
+.news-subject{
+	color: red;
+	background: yellow;
+}
+.news-item{
+	margin-top: 20px;
+	background: gray;
+	padding: 0 0 0 150px;
+}
+.news-item-subject{
+	font-size: 16px;
+	font-family: 'Noto Sans Bold';
+	background: lime;
+}
+.news-item-date{
+	display: block;
+	margin-top: 10px;
+	background: skyblue;
+}
+.news-item-brief{
+	margin-top: 5px;
+	background: pink;
+}
+.news figure{
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+.news-more{
+	position: absolute;
+	text-align: right;
+	top: 0;
+	right: 0;
+}

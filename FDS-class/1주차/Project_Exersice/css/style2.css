@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* ===========================
+   스타일 초기화
+	 ============================ */
+html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,fieldset{
+	margin: 0;
+	padding: 0;
+}
+ul{
+  list-style: none;
+}
+/* 레이아웃 */
+body{
+  background-color: silver;
+  margin: 0;
+}
+.header, .visual, .main, .slogan, .footer{
+  width: 940px;
+  margin: 0 auto;
+}
+.header{
+  background-color: gray;
+  height: 10vh;
+}
+.visual{
+  background-color: yellow;
+  height: 10vh;
+}
+.main{
+  background-color: green;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.column1{
+  background-color: pink;
+  height: 20vh;
+  width: 250px;
+}
+.column2{
+  background-color: red;
+  height: 20vh;
+  width: 380px;
+}
+.column3{
+  background-color: gold;
+  height: 20vh;
+  width: 190px;
+}
+.slogan{
+  background-color: lime;
+  height: 10vh;
+}
+.footer-wrap{
+  background-color: violet;
+}
+.footer{
+  background-color: skyblue;
+  height: 10vh;
+}
+
+/* 헤더 */
+.header{
+  position: relative;
+}
+.logo{
+  position: absolute;
+	top: 50px;
+	left: 60px;
+}
+
+/* 안내링크 */
+.info-menu{
+  text-align: right;
+  position: relative;
+}
+.info-menu *{
+  display: inline-block;
+}
+.info-menu li{
+  background-color: yellow;
+}

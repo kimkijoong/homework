@@ -1,0 +1,25 @@
+$app-width: 1400px;
+$app-min-height: 60px;
+
+$breakpoint-md: 760px;
+$breakpoint-lg: 1220px;
+$breakpoint-xl: 1480px;
+
+$app-margin-top: 0px;
+
+$min-w: min-width;
+
+$box-width: 400px;
+$box-height: 200px;
+
+.center-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $box-width;
+  height: $box-height;
+  margin: {
+    top: $box-height / -2;
+    left: $box-width / -2;
+  }
+}

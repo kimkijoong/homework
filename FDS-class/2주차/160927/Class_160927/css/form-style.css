@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+html{
+  margin:0;
+  font-size: 0.625em;
+  line-height: 1.2;
+  font-family: 'Open Sans', sans-serif;
+  color: #222222;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  background: silver;
+}
+a:visited, a:link{
+  text-decoration: none;
+  color: #1f4ba5;
+}
+
+/*.a11y-hidden{
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}*/
+
+.wrapper{
+  background-color: yellow;
+  margin: 0 auto;
+  width:360px;
+  height: 560px;
+  position: relative;
+}
+.account-info{
+  padding: 40px 60px 0 60px ;
+}
+
+legend{
+  position: absolute;
+  left: -9999em;
+}
+fieldset{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  width:360px;
+  height: 560px;
+}
+h1{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 0 0 25px;
+  padding: 0;
+  font-size: 1.8rem;
+}
+/* 스타일링 */
+.login label, .E-mail label, .Password label, .Confirm-password label{
+  display: block;
+  padding-left: 11px;
+}
+.login input, .E-mail input, .Password input,.Confirm-password input{
+  height: 30px;
+  width: 240px;
+  border-radius: 15px;
+  border: 0px;
+  background-color: #f6f6f6;
+  margin-top: 7px;
+  margin-bottom: 17px;
+  font-family: 'Varela Round'
+}
+.bottom-btns{
+  box-sizing: border-box;
+  padding: 0 60px;
+  width: 100%;
+  display: block;
+  margin-bottom: 23px;
+}
+  .Create-account-btns button[name="Create account"]{
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 30px;
+    border-radius: 15px;
+    border: 0px;
+    background: #1f4ba5;
+    color: #fff;
+  }
+}
+.Create-account-btns > button:first-child{
+  display: block;
+  margin: 0 auto;
+}
+.Create-account-btns span{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.sns{
+  display: block;
+}
+
+.sns1{
+  float: left;
+  width: 115px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid #215b9a;
+  background: #fff;
+}
+.sns2{
+  float: right;
+  width: 115px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid #00adf2;
+  background: #fff;
+}
+.sns::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.Create-account-btns span{
+  font-family: 'PT Serif', sans-serif;
+  font-style: italic;
+  color: #868686;
+  margin-top:20px;
+  margin-bottom: 15px;
+
+}
+.login-pages{
+  display: block;
+  border-top: 1px solid #ececec;
+  text-align: center;
+  padding-top: 20px;
+}
+.login-pages span{
+  margin-left: 1em;
+}
+.close{
+  padding: 40px;
+  position: absolute;
+  top:-20px;
+  right:-20px;
+}

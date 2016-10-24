@@ -1,0 +1,25 @@
+// // $n: 1
+// // $count: 24
+// //
+// // @while $n <= $count
+// //   @debug $// NOTE: .col-#{$n}
+// //   .col-#{$n}
+// //     float: left
+// //     width: column($n)
+// //   $n: $n + 1
+//
+// $count: 16
+//
+// @for $i from 1 through $count
+//   @debug $i
+//     .col-#{$i}
+//       @extend %fl
+//       width: column($i)
+//
+//
+//
+
+$icon-list: play, pause, next, previous, stop
+@each $icon in $icon-list
+  .icon-#{$icon}
+    background-image: url("images/icons/icon-#{$icon}.png")
