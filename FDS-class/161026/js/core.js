@@ -1,17 +1,9 @@
-(function(global){
-  'use strict';
-  var doc = global.document;
-  var gnb = doc.querySelector('#gnb');
-  var gnb_links = gnb.querySelector('a');
-  var print_area = doc.querySelector('#print_area');
-  var updatePrintMessage =  function () {}
+var arr = []
+for(var i = 0; i < 5; i++){
+    arr[i] = function(){
+        return i;
+    }
 }
-
-console.log('gnb_links.length:', gnb_links.length );
-
-for (var i=0, l=gnb_links.length; i < l; i++) {
-  var gnb_link = gnb_links[i];
-  gnb_link.onclick = updatePrintMessages;
+for(var index in arr) {
+    console.log(arr[index]());
 }
-
-)(this)

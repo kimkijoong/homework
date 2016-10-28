@@ -1,0 +1,15 @@
+body {
+  margin: 4rem 20rem;
+  font-size: 1.4rem; }
+
+[id^="point-"] {
+  border-bottom: 3px solid #734cc4;
+  padding-bottom: 3rem;
+  color: #26428b; }
+  [id^="point-"] h2::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #3d3a44;
+    transform: rotate(-45deg) translateX(-10px); }
