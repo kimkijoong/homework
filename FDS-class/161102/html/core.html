@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>161102-01</title>
+</head>
+<script>
+  function init() {function clickButton(button){
+      window.alert('clicked button element.');
+      if (button.firstChild.nodeValue === 'click me') {
+        button.firstChild.nodeValue='this is button.clicked';
+      } else {
+        button.firstChild.nodeValue = 'click me';
+      }
+    }
+    (function(global){
+      'use strict';
+
+      var look_at_button = document.querySelector('.look-at-button');
+      look_at_button.onclickw = clickButton;
+
+    });//(this);
+
+    (function(global){
+      'use strict';
+
+      var look_at_button = document.querySelector('.look-at-button');
+
+      var click_count =0;
+
+      look_at_button.onclick = function() {
+        if (++click_count === 2) {this.setAttribute('disabled','disabled');}
+      }
+    })(this);}
+  function checkWindowResize() {
+    var device_width = getWindowWidth();
+    if (device_width > 1200){
+      console.log('divie is desktop');
+    } else if ( device_width <= 1200 && devide_width > 768 ){
+      console.log('device is tablet')
+    } else { console.log('device is mobile');
+  }
+  }
+  window.onload = init;
+  window.onresize = checkWindowResize;
+</script>
+<body>
+   <button type="button" class="look-at-button">Look</button>
+  <button onclick="clickButton(this)"
+  lang="en-US"
+  type="button">click me</button>
+
+
+<script>
+
+</script>
+</body>
+</html>

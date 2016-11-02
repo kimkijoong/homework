@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../js/new-event-system.js"></script>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      position: relative;
+      border: 2px solid #333;
+      padding: 3rem;
+      border-radius: 10px;
+      background: hsla(24,19%,57%,0.3);
+    }
+    .box::before{
+      content: attr(class);
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      width: 160px;
+      padding: 0.2em 1em;
+      background: #000;
+      color: white;
+      text-align: center;
+      transform: translateX(-50%);
+    }
+    .grand-child {
+      height: 200px;
+      width: 100px;
+    }
+    .grand-child a{
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 900;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="box grand-parent">
+      <div class="box parent">
+        <div class="box child">
+          <div class="box grand-child">
+            <a href="">link in grand child </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
