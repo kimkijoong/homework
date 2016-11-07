@@ -1,0 +1,16 @@
+{
+  "name": "161107",
+  "version": "1.0.0",
+  "description": "jQuery Study",
+  "main": "index.js",
+  "scripts": {
+    "install-jquery": "npm install --save jquery",
+    "serve" : "http=server -o -a localhost -p 9090"
+  },
+  "keywords": ["jQuery"],
+  "author": "kijoong",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
