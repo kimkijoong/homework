@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "install-jquery": "npm install --save jquery",
-    "serve" : "http=server -o -a localhost -p 9090"
+    "serve" : "http=server -o -a localhost -p 9090",
+    "copy-jquery" : "mkdir lib && cp node_modules/jquery/min.js lib/jquery.min.js",
+    "clear" : "rm-rf lib"
   },
   "keywords": ["jQuery"],
   "author": "kijoong",

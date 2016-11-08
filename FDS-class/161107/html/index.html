@@ -4,21 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>제이쿼리</title>
-  <!-- <script src="../lib/jquery.js"></script> -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
   <script>
-    window.jQuery || document.write('<sciript src="../lib/jquery.min.js"><\/script>');
+    var $ = function(selector){return document.querySelector(selector);};
+    var $$ = document.querySelectorAll;
+
+
   </script>
+  <title>Document</title>
+  <link rel="stylesheet" href="../lib/jquery.min.js">
 </head>
 <body>
- <div class="gnb">
-   <li><a href="link-01" title="hyperlink 01">link 01</a></li>
-   <li><a href="link-02" title="hyperlink 02">link 02</a></li>
-   <li><a href="link-03" title="hyperlink 03">link 03</a></li>
-   <li><a href="link-04" title="hyperlink 04">link 04</a></li>
-   <li><a href="link-05" title="hyperlink 05">link 05</a></li>
- </div>
+
+<script src="../js/jquery-core.js"></script>
 </body>
 </html>
