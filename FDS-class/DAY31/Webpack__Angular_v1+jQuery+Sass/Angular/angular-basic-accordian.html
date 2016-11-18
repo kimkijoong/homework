@@ -9,8 +9,13 @@
   <title>Angular V1 아코디언 탭 컴포넌트</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/app.css">
+  <style>
+    body { background: {{app_background_color}}}
+  </style>
 </head>
 <body data-ng-init="
+  app_version ='1.0.1';
+  app_background_color ='#fff'
   accordian_tab_01_show = true;
   accordian_tab_02_show = false;
   accordian_tab_03_show = false;
@@ -20,6 +25,7 @@
 
   <h1>Angular Accordian Tab Menu</h1>
 
+  <button type="button" data-ng-click="app_background_color ='#feccce'" class="change-body-bg-color">hello</button>
   <div class="ui-accordian">
     <h3 class="ui-accordian-tab">
       <a href="" data-ng-click="accordian_tab_01_show = !accordian_tab_01_show">tab 1</a>
